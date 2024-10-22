@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Loja de Instrumentos</title>
+</head>
+
+<body>
+    <header class="bg-gray-900 text-white flex justify-between items-center p-4">
+        <div class="logo">
+            <img src="./img/logo-pequeno.png" alt="Logo da Empresa" class="w-32">
+        </div>
+        <nav>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-orange-400">Sobre</a></li>
+                <li><a href="#services" class="hover:text-orange-400">Serviços</a></li>
+                <li><a href="#testimonials" class="hover:text-orange-400">Testemunhos</a></li>
+                
+            </ul>
+        </nav>
+        <a href="#contact" class="cta-btn bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">Entre em Contato</a>
+    </header>
+    <section id="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide flex justify-center items-center">
+                    <img src="./img/guitarra (2).png" alt="Guitarra" class="max-w-full h-auto">
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                    <img src="./img/bateria.png" alt="Bateria" class="max-w-full h-auto">
+                </div>
+                <div class="swiper-slide flex justify-center items-center">
+                    <img src="./img/baixo.png" alt="Baixo" class="max-w-full h-auto">
+                </div>
+            </div>
+    
+            <div class="swiper-pagination"></div>
+    
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+    
+    <section id="about" class="bg-gray-100 py-12 px-6 text-center">
+        <h2 class="text-3xl font-bold mb-4">Sobre Nós</h2>
+        <p class="text-lg max-w-3xl mx-auto">Na Bagins, somos apaixonados por rock e metal. Especializados em instrumentos de alta qualidade, oferecemos guitarras, baterias e acessórios das melhores marcas, garantindo o som pesado que você busca. Seja para iniciantes ou profissionais, nossa missão é ajudar você a criar música com personalidade e potência. Rock nunca morre, e aqui você encontra os instrumentos para manter o som vivo.</p>
+    </section>
+
+    <section id="contact" class="bg-white py-12 px-6">
+        <h2 class="text-3xl font-bold text-center mb-4">Entre em Contato</h2>
+        <form id="contact-form" class="max-w-lg mx-auto">
+            <input type="text" name="name" placeholder="Seu Nome" required class="w-full p-4 mb-4 border rounded">
+            <input type="email" name="email" placeholder="Seu Email" required class="w-full p-4 mb-4 border rounded">
+            <input type="tel" name="phone" placeholder="Seu Telefone" required class="w-full p-4 mb-4 border rounded">
+            <textarea name="message" placeholder="Sua Mensagem" required class="w-full p-4 mb-4 border rounded"></textarea>
+            <button  type="submit"class="cta-btn bg-orange-500 text-white w-full py-2 rounded hover:bg-orange-600"">Enviar Mensagem</button>
+        </form>  
+    </section>
+
+
+    <footer class="bg-gray-900 text-white py-4 text-center">
+        <div class="social-links space-x-4 mb-2">
+            <a href="#" class="hover:text-orange-400">Facebook</a>
+            <a href="#" class="hover:text-orange-400">Instagram</a>
+            <a href="#" class="hover:text-orange-400">LinkedIn</a>
+        </div>
+        <p><a href="#" class="hover:text-orange-400">Termos de Uso</a> | <a href="#" class="hover:text-orange-400">Política de Privacidade</a></p>
+    </footer>
+
+ 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+
+</html>
