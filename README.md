@@ -17,3 +17,6 @@ Este é um projeto de uma **landing page** para uma loja de instrumentos musicai
 - **CSS3** com **Tailwind CSS**
 - **JavaScript**
 - **Swiper.js** (para o slider/carrossel)
+
+
+  LINK DO GITHUBPAGES: https://cauanlimberger.github.io/atv04/
